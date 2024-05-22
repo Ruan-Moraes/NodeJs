@@ -24,7 +24,8 @@ const server = http.createServer((req, res) => {
         <input type="text" name="name" id="name">
         <button type="submit">Enviar</button>
     </form>
-  `);
+  `); 
+  
   res.end();
 });
 

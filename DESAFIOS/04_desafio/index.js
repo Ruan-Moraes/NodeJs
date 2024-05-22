@@ -8,8 +8,6 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-// make 20 products with random prices and with randoms names and create link to each one to see more details
-
 const products = [
   {
     name: 'Product 1',
@@ -106,6 +104,6 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
-app.listen(3008, () => {
-  console.log('Server is running on http://localhost:3008');
+app.listen(8080, () => {
+  console.log('Server is running on http://localhost:8080');
 });
